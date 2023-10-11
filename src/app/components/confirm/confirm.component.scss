@@ -1,0 +1,28 @@
+:host {
+    position: absolute;
+    background-color: rgba(30, 34, 79, 0.617);
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog {
+    position: relative;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

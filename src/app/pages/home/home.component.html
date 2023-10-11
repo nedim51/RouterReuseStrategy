@@ -1,0 +1,87 @@
+<h3>Поиск:</h3>
+
+<form class="container-lg" [formGroup]="searchByPurchaseForm" (ngSubmit)="onSearchByPurchaseFormSubmit()">
+    <div class="row flex align-items-end">
+        <div class="field col-2">
+            <label class="field-title" for="_searchPurchaseNumber">По номеру закупки:</label>
+            <input class="field-input" type="text" id="_searchPurchaseNumber" formControlName="purchaseNumber">
+        </div>
+
+        <div class="col-2">
+            <button type="submit" [disabled]="searchByPurchaseForm.invalid">Найти</button>
+        </div>
+    </div>
+</form>
+
+<br>
+
+<form class="container-lg" [formGroup]="searchByContractForm" (ngSubmit)="onSearchByContractFormSubmit()">
+    <div class="row flex align-items-end">
+        <div class="field col-2">
+            <label class="field-title" for="_searchContractNumber">По номеру контракта:</label>
+            <input class="field-input" type="text" id="_searchContractNumber" formControlName="contractNumber">
+        </div>
+
+        <div class="col-2">
+            <button type="submit" [disabled]="searchByContractForm.invalid">Найти</button>
+        </div>
+    </div>
+</form>
+
+<br>
+
+<h3>Список закупок/контрактов:</h3>
+
+<br>
+
+<h3>Пользователь:</h3>
+
+<form class="container-lg" [formGroup]="selfForm" (ngSubmit)="onSelfFormSubmit()">
+    <div class="row">
+        <div class="field col-4">
+            <label class="field-title" for="_fio">ФИО</label>
+            <input class="field-input" type="text" id="_fio" formControlName="fio">
+        </div>
+
+        <div class="field col-2">
+            <label class="field-title" for="_phone">Номер телефона</label>
+            <input class="field-input" type="text" id="_phone" formControlName="phone">
+        </div>
+
+        <div class="field col-2">
+            <label class="field-title" for="_email">Email</label>
+            <input class="field-input" type="text" id="_email" formControlName="email">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="field col-8">
+            <label class="field-title" for="_address">Адрес</label>
+            <input class="field-input" type="text" id="_address" formControlName="address">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="field col-3">
+            <label class="field-title" for="_company">Компания</label>
+            <input class="field-input" type="text" id="_company" formControlName="company">
+        </div>
+
+        <div class="field col-2">
+            <label class="field-title" for="_post">Должность</label>
+            <input class="field-input" type="text" id="_post" formControlName="post">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-2">
+            <button type="submit" [disabled]="selfForm.invalid">Сохранить</button>
+        </div>
+    </div>
+</form>

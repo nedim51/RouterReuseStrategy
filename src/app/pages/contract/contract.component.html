@@ -1,0 +1,61 @@
+<h3>Контракт:</h3>
+
+<form class="container-lg" [formGroup]="contractForm" (ngSubmit)="onContractFormSubmit()">
+    <div class="row">
+        <div class="field col-2">
+            <label class="field-title" for="contractType">Тип контракта</label>
+            <input class="field-input" type="text" id="contractType" formControlName="contractType">
+        </div>
+
+        <div class="field col-2">
+            <label class="field-title" for="contractNumber">Номер контракта</label>
+            <input class="field-input" type="text" id="contractNumber" formControlName="contractNumber">
+        </div>
+
+        <div class="field col-2">
+            <label class="field-title" for="contractPrice">Цена контракта</label>
+            <input class="field-input" type="text" id="contractPrice" formControlName="contractPrice">
+        </div>
+
+        <div class="field col-2">
+            <label class="field-title" for="contractNCK">НЦК</label>
+            <input class="field-input" type="text" id="contractNCK" formControlName="contractNCK">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="field col-3">
+            <label class="field-title" for="contractSupplierName">Наименование исполнителя</label>
+            <input class="field-input" type="text" id="contractSupplierName" formControlName="contractSupplierName">
+        </div>
+
+        <div class="field col-2">
+            <label class="field-title" for="contractSupplierINN">ИНН исполнителя</label>
+            <input class="field-input" type="text" id="contractSupplierINN" formControlName="contractSupplierINN">
+        </div>
+
+        <div class="field col-3">
+            <label class="field-title" for="contractSupplierOGRN">ОГРН</label>
+            <input class="field-input" type="text" id="contractSupplierOGRN" formControlName="contractSupplierOGRN">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="field col-8">
+            <label class="field-title" for="contractSupplierAddress">Адрес</label>
+            <input class="field-input" type="text" id="contractSupplierAddress" formControlName="contractSupplierAddress">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-2">
+            <button type="submit" [disabled]="contractForm.invalid">Сохранить</button>
+        </div>
+    </div>
+</form>

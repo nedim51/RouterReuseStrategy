@@ -1,0 +1,73 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.container-lg {
+    max-width: 992px;
+}
+
+.row {
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col-1 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc((100% - (20px * 1)) / 120px * (12 * 1));
+}
+
+.col-2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc((100% - (20px * 2)) / 120px * (12 * 2));
+}
+
+.col-3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc((100% - (20px * 3)) / 120px * (12 * 3));
+}
+
+.col-4 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc((100% - (20px * 4)) / 120px * (12 * 4));
+}
+
+.col-5 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc((100% - (20px * 5)) / 120px * (12 * 5));
+}
+
+.col-6 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc((100% - (20px * 6)) / 120px * (12 * 6));
+}
+.col-7 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc((100% - (20px * 7)) / 120px * (12 * 7));
+}
+.col-8 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc((100% - (20px * 8)) / 120px * (12 / 8));
+}
+
+.flex {
+    display: flex !important;
+}
+
+.align-items-end {
+    align-items: flex-end !important;
+}
